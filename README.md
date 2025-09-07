@@ -25,6 +25,32 @@ repo-root/
 
 ---
 
+
+---
+
+## ▶️ How It Works
+1. User uploads a resume.  
+2. FastAPI backend extracts and chunks the text.  
+3. Model compares it with the provided job description.  
+4. Frontend displays:  
+   - Match score  
+   - Strengths  
+   - Weaknesses  
+
+---
+
+## 📌 Deployment Notes
+- Hugging Face Spaces reads this config from the top of the README.  
+- The backend is exposed via **`app.py`**, which mounts FastAPI into Gradio.  
+- Dependencies come from `requirements.txt`.  
+- Runtime is pinned with `runtime.txt` (`python-3.10`).  
+
+---
+
+👨‍🎓 Built as a student project to simplify the job application process.  
+✨ Free to use, open-source, and open for contributions!
+
+
 ##  Features
 
 - **LLM scoring** using `google/flan-t5-base` (CPU-friendly)

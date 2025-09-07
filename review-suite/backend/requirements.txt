@@ -1,7 +1,9 @@
 fastapi
 uvicorn
-python-multipart
-sentence-transformers
+aiofiles
 faiss-cpu
-torch
+numpy
 transformers
+torch
+PyPDF2
+python-multipart

@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-aiofiles
-faiss-cpu
-numpy
-transformers
-torch
-PyPDF2
-python-multipart

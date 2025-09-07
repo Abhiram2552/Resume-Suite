@@ -1,0 +1,16 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chart.js": "^4.4.3"
+  },
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests specified'"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

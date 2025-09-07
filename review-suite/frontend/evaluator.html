@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Evaluator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="brand">Resume Suite</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html" class="btn" style="margin-left:1rem; display: flex; justify-content: center;">Home</a>
+      <a href="evaluator.html" class="btn" style="margin-left:1rem; display: flex; justify-content: center;">Evaluator</a>
+      <a href="ranking.html" class="btn" style="margin-left:1rem; display: flex; justify-content: center;">Ranking</a>
+      <a href="improvement.html" class="btn" style="margin-left:1rem; display: flex; justify-content: center;">Improve</a>
+    </div>
+  </nav>
+
+  <main class="page-container" style="display: flex; justify-content: center;">
+    <div class="card evaluator-main-card">
+      <div class="card title-card" style="display: flex; justify-content: center;"">
+        <h1 style="text-align:center;">Resume Evaluator</h1>
+      </div>
+      <div class="evaluator-upload-row">
+        <div class="card upload-section">
+          <label class="file-label">Upload Resume (PDF)</label>
+          <input type="file" id="evaluator-resume-file" accept=".pdf" />
+        </div>
+        <div class="card upload-section">
+          <label class="file-label">Upload Job Description (PDF)</label>
+          <input type="file" id="evaluator-jd-file" accept=".pdf" />
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button id="analyze-btn" class="btn" style="min-width: 220px;">Analyze Match</button>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <div id="evaluator-results" class="card results-box wide-results-box" style="margin-top:1.5rem;">
+          Results will appear here...
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

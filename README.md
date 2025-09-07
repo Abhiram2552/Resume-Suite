@@ -9,7 +9,7 @@ Works great on CPU with a small model locally; you can switch to a stronger mode
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 
 ```
 repo-root/
@@ -25,7 +25,7 @@ repo-root/
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **LLM scoring** using `google/flan-t5-base` (CPU-friendly)
 - **Robust JSON parsing** (won’t crash if model returns a bare number like `78`)
@@ -35,7 +35,7 @@ repo-root/
 
 ---
 
-## 🛠️ Local Development
+##  Local Development
 
 ### 1) Prereqs
 - Python **3.10** (recommended for Hugging Face & packages)
@@ -76,7 +76,7 @@ Backend now at: `http://localhost:8000`
 
 ---
 
-## 🔌 API Overview (FastAPI)
+##  API Overview (FastAPI)
 
 Endpoints under `/api/*`:
 
@@ -96,7 +96,7 @@ Response includes:
 
 ---
 
-## 🧠 Model & Fallback Logic
+##  Model & Fallback Logic
 
 - Ask LLM for JSON `{ Match Score, Strengths, Weaknesses }`  
 - If invalid → fallback to keyword scorer  
@@ -104,7 +104,7 @@ Response includes:
 
 ---
 
-## 🗂️ Files You Must Have
+##  Files You Must Have
 
 ### `requirements.txt`
 ```
@@ -130,14 +130,14 @@ python-3.10
 
 ---
 
-## ☁️ Deploy to Hugging Face Spaces
+##  Deploy to Hugging Face Spaces
 
 Use a **Gradio Space** with an `app.py` mounting FastAPI.  
 Frontend can be served separately (Static Space) or together.
 
 ---
 
-## 🧪 Quick Test
+## Quick Test
 ```bash
 curl -X POST http://localhost:8000/api/analyze-resume   -H "Content-Type: application/json"   -d '{"job_description":"Python dev","resume_text":"I worked with FastAPI"}'
 ```
